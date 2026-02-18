@@ -152,8 +152,11 @@
         float: right;
         display: inherit !important;
         padding: 0;
-        width: 100%;
+        width: auto;
         padding-top: 12px;
+    }
+    .banner_main {
+        min-height: 500px;
     }
     .navigation .navbar-collapse {
         background: #000;
@@ -187,17 +190,20 @@
         padding: 30px 0px 30px 0px;
     }
     .logo {
-        text-align: center !important;
+        text-align: left !important;
         padding-bottom: 6px;
         float: left;
-        padding-left: 37%;
+        padding-left: 15px;
     }
     .d_none {
         display: none;
     }
+    .banner_main {
+        min-height: 400px;
+    }
     .text-bg h1 {
-        font-size: 50px;
-        line-height: 68px;
+        font-size: 36px;
+        line-height: 46px;
         padding-bottom: 10px;
     }
     .three_box {
@@ -278,8 +284,8 @@
         float: right;
         display: inherit !important;
         padding: 0 !important;
-        width: 100%;
-        margin-top: -38px;
+        width: auto;
+        margin-top: -50px;
     }
     .navigation .navbar-collapse {
         background: #000;
