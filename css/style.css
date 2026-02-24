@@ -14,17 +14,17 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
-@import url(animate.min.css);
-@import url(normalize.css);
+/* @import url(animate.min.css); */
+/* @import url(normalize.css); */
 @import url(icomoon.css);
 @import url(font-awesome.min.css);
-@import url(meanmenu.css);
-@import url(owl.carousel.min.css);
-@import url(swiper.min.css);
-@import url(slick.css);
+/* @import url(meanmenu.css); */
+/* @import url(owl.carousel.min.css); */
+/* @import url(swiper.min.css); */
+/* @import url(slick.css); */
 @import url(jquery.fancybox.min.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
+/* @import url(jquery-ui.css); */
+/* @import url(nice-select.css); */
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -110,7 +110,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -155,7 +155,7 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
 }
 
@@ -361,7 +361,7 @@ ul.btn li:last-child {
      max-width: 90%;
 }
 
-.logo::after {
+/* .logo::after {
      position: absolute;
      content: "";
      width: 136px;
@@ -370,7 +370,7 @@ ul.btn li:last-child {
      top: -30px;
      background: url(../images/top_head.png);
      background-repeat: no-repeat;
-}
+} */
 
 
 /** banner section **/
@@ -909,7 +909,7 @@ ul.location_icon li a {
 }
 
 ul.location_icon li a:hover {
-     color:  #069d47;
+     color: #069d47;
 }
 
 .footer h3 {
@@ -934,7 +934,7 @@ ul.link li a {
 }
 
 ul.link li a:hover {
-     color:  #069d47;
+     color: #069d47;
 }
 
 ul.link li a::after {
@@ -967,7 +967,7 @@ ul.link li a::after {
 .sub_btn {
      font-size: 17px;
      transition: ease-in all 0.5s;
-     background-color:  #069d47;
+     background-color: #069d47;
      color: #fff;
      padding: 11px 0px;
      max-width: 200px;
@@ -987,7 +987,7 @@ ul.link li a::after {
 .copyright {
      margin-top: 70px;
      padding: 20px 0px;
-     background-color:  #069d47;
+     background-color: #069d47;
 }
 
 .copyright p {
@@ -1011,4 +1011,3 @@ ul.link li a::after {
 .products_page .product .titlepage {
      margin-top: 70px;
 }
-
