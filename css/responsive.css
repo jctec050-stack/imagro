@@ -105,6 +105,33 @@
     .d_none {
         display: none;
     }
+
+    /* Banner text overlays */
+    .banner-text-overlay {
+        width: 50%;
+        padding: 30px 35px;
+    }
+
+    .banner-text-overlay h2 {
+        font-size: 26px;
+    }
+
+    .banner-text-overlay p {
+        font-size: 13px;
+    }
+
+    .banner-text-overlay h4 {
+        font-size: 15px;
+    }
+
+    /* Client slider */
+    .client-slide {
+        flex: 0 0 calc(33.33% - 20px);
+    }
+
+    .client-slider-wrapper {
+        padding: 0 50px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -241,6 +268,61 @@
     }
 
     .product-slider-wrapper {
+        padding: 0 45px;
+    }
+
+    /* Banner text overlays */
+    .banner-slide img {
+        height: 450px;
+    }
+
+    .banner-text-overlay {
+        width: 55%;
+        padding: 25px 30px;
+    }
+
+    .banner-text-overlay h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .banner-text-overlay p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    .banner-text-overlay h4 {
+        font-size: 14px;
+    }
+
+    .banner-text-overlay ul {
+        gap: 5px 15px;
+    }
+
+    .banner-text-overlay ul li {
+        font-size: 12px;
+    }
+
+    .banner-text-center {
+        width: 100%;
+    }
+
+    /* Client slider */
+    .client-slide {
+        flex: 0 0 calc(50% - 15px);
+    }
+
+    .client-logo-box {
+        height: 140px;
+        padding: 15px 20px;
+    }
+
+    .client-logo-box img {
+        max-height: 100px;
+    }
+
+    .client-slider-wrapper {
         padding: 0 45px;
     }
 }
@@ -417,5 +499,81 @@
     .navigation.navbar-dark .navbar-toggler-icon {
         background: url(../images/menu_icon.png);
         background-repeat: no-repeat;
+    }
+
+    /* Banner text overlays - mobile */
+    .banner-slide img {
+        height: 400px;
+    }
+
+    .banner-text-overlay {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 25px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .banner-text-overlay h2 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .banner-text-overlay p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    .banner-text-overlay h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .banner-text-overlay ul {
+        gap: 5px 15px;
+        justify-content: center;
+    }
+
+    .banner-text-overlay ul li {
+        font-size: 13px;
+    }
+
+    .banner-text-left {
+        right: auto;
+        left: 0;
+    }
+
+    .banner-slider-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    /* Client slider - mobile */
+    .client-slide {
+        flex: 0 0 70%;
+        min-width: 200px;
+    }
+
+    .client-logo-box {
+        height: 120px;
+        padding: 15px;
+    }
+
+    .client-logo-box img {
+        max-height: 80px;
+    }
+
+    .client-slider-wrapper {
+        padding: 0 40px;
+    }
+
+    .client-slider-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
     }
 }
