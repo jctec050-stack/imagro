@@ -302,6 +302,8 @@ ul.btn li:last-child {
      color: #fff;
      font-size: 17px;
      line-height: 20px;
+     font-weight: 700;
+     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
@@ -346,9 +348,14 @@ ul.btn li:last-child {
 
 .header {
      width: 100%;
-     padding: 30px 30px;
+     padding: 15px 30px;
      border-bottom: #c6cad5 solid 12px;
-     background-color: #000000;
+     background: url(../images/header_bg.jpg) center center / cover no-repeat;
+}
+
+.header .row {
+     display: flex;
+     align-items: center;
 }
 
 .logo {
@@ -358,7 +365,7 @@ ul.btn li:last-child {
 }
 
 .logo img {
-     max-width: 90%;
+     max-width: 129%;
 }
 
 /* .logo::after {
@@ -373,64 +380,82 @@ ul.btn li:last-child {
 } */
 
 
-/** banner section **/
+/** banner slider section **/
 
-.banner_main {
-     background: url(../images/banner.jpg);
-     background-repeat: no-repeat;
-     min-height: 840px;
-     background-size: 100% 100%;
+.banner-slider-section {
+     width: 100%;
+     overflow: hidden;
+}
+
+.banner-slider-wrapper {
+     position: relative;
+     width: 100%;
+}
+
+.banner-slider {
      display: flex;
-     justify-content: center;
-     align-content: center;
-     align-items: center;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+     scroll-snap-type: x mandatory;
+     cursor: grab;
 }
 
-.text-bg {
-     text-align: center;
+.banner-slider:active {
+     cursor: grabbing;
 }
 
-.text-bg h1 {
-     text-transform: uppercase;
-     color: #fff;
-     font-size: 110px;
-     line-height: 120px;
-     padding-bottom: 15px;
-     font-weight: bold;
+.banner-slider::-webkit-scrollbar {
+     display: none;
 }
 
-.text-bg p {
-     font-size: 17px;
-     color: #fff;
-     line-height: 28px;
-     font-weight: 500;
-     padding-bottom: 50px;
+.banner-slide {
+     flex: 0 0 100%;
+     min-width: 100%;
+     scroll-snap-align: start;
+}
+
+.banner-slide img {
+     width: 100%;
+     height: 600px;
+     object-fit: cover;
      display: block;
 }
 
-.text-bg a {
-     font-size: 17px;
-     background-color: transparent;
+.banner-slider-arrow {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     z-index: 10;
+     background: rgba(0, 0, 0, 0.5);
      color: #fff;
-     font-weight: 600;
-     padding: 11px 0px;
-     width: 100%;
-     max-width: 230px;
-     text-align: center;
-     display: inline-block;
-     border-radius: 30px;
-     border: #388E3C solid 4px;
-     transition: ease-in all 0.5s;
+     border: none;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     font-size: 20px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: background 0.3s ease;
 }
 
-.text-bg a:hover {
-     background-color: #13110e;
-     color: #fff;
-     transition: ease-in all 0.5s;
+.banner-slider-arrow:hover {
+     background: rgba(56, 142, 60, 0.9);
+}
+
+.banner-slider-prev {
+     left: 20px;
+}
+
+.banner-slider-next {
+     right: 20px;
 }
 
 
-/** end banner section **/
+/** end banner slider section **/
 
 .titlepage {
      text-align: center;
@@ -503,7 +528,7 @@ ul.btn li:last-child {
 
 .hottest {
      background: #fff;
-     padding: 90px 0 0px 0;
+     padding: 90px 0 60px 0;
 }
 
 .hottest .titlepage {
@@ -549,7 +574,7 @@ ul.btn li:last-child {
 /** choose  section **/
 
 .choose {
-     margin-top: 90px;
+     margin-top: 0;
      background-color: #242323;
      padding: 90px 0 190px 0;
      position: relative;
@@ -652,10 +677,58 @@ ul.btn li:last-child {
 
 /** product  section **/
 
+.product {
+     padding: 90px 0 60px 0;
+}
+
+.product .titlepage {
+     padding-bottom: 40px;
+}
+
+.product-slider-wrapper {
+     position: relative;
+     padding: 0 60px;
+     max-width: 100%;
+}
+
+.product-slider {
+     display: flex;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+     gap: 20px;
+     padding: 10px 0;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+     scroll-snap-type: x mandatory;
+     cursor: grab;
+}
+
+.product-slider:active {
+     cursor: grabbing;
+}
+
+.product-slider::-webkit-scrollbar {
+     display: none;
+}
+
+.product-slide {
+     flex: 0 0 calc(33.333% - 14px);
+     min-width: 280px;
+     scroll-snap-align: start;
+}
+
 .product_box {
      position: relative;
-     margin-bottom: 30px;
+     margin-bottom: 0;
      box-shadow: 0 0 51px rgba(13, 3, 3, 0.13);
+     border-radius: 8px;
+     overflow: hidden;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product_box:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 40px rgba(13, 3, 3, 0.25);
 }
 
 .product_box figure {
@@ -664,19 +737,67 @@ ul.btn li:last-child {
 
 .product_box figure img {
      width: 100%;
-     height: 343px;
+     height: 300px;
+     object-fit: cover;
+     display: block;
+}
+
+.product_box::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 50%;
+     background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+     pointer-events: none;
 }
 
 .product_box h3 {
      position: absolute;
      bottom: 15px;
      padding: 0;
-     right: 50px;
+     right: 20px;
      text-align: right;
      color: #fff;
-     font-size: 30px;
+     font-size: 26px;
      text-transform: uppercase;
      font-weight: 600;
+     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.6);
+     z-index: 1;
+}
+
+.product-slider-arrow {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     z-index: 10;
+     background: #388E3C;
+     color: #fff;
+     border: none;
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     font-size: 18px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: background 0.3s ease, transform 0.3s ease;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-slider-arrow:hover {
+     background: #2E7D32;
+     transform: translateY(-50%) scale(1.1);
+}
+
+.product-slider-prev {
+     left: 10px;
+}
+
+.product-slider-next {
+     right: 10px;
 }
 
 .black {
