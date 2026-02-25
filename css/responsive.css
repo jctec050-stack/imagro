@@ -174,8 +174,13 @@
 
     .choose_img {
         margin-right: 0;
+        margin-left: 0;
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    .choose_img figure {
+        margin-left: 0;
     }
 
     .padding_left0 {
@@ -196,7 +201,8 @@
     }
 
     .titlepage h2 {
-        font-size: 34px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .about_img {
@@ -259,9 +265,15 @@
     }
 
     .hottest .hottest_box {
-        margin-top: 30px
+        margin-top: 30px;
+        padding: 40px 25px;
     }
 
+    .hottest {
+        padding: 60px 0 40px 0;
+    }
+
+    /* Product slider */
     .product-slide {
         flex: 0 0 calc(50% - 10px);
         min-width: 220px;
@@ -271,41 +283,53 @@
         padding: 0 45px;
     }
 
-    /* Banner text overlays */
+    .product {
+        padding: 50px 0 30px 0;
+    }
+
+    /* Banner - tablet small */
     .banner-slide img {
-        height: 450px;
+        height: 350px;
     }
 
     .banner-text-overlay {
-        width: 55%;
-        padding: 25px 30px;
+        width: 60%;
+        padding: 20px 25px;
     }
 
     .banner-text-overlay h2 {
-        font-size: 22px;
-        margin-bottom: 10px;
+        font-size: 20px;
+        margin-bottom: 8px;
+        letter-spacing: 2px;
     }
 
     .banner-text-overlay p {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 1.5;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
 
     .banner-text-overlay h4 {
-        font-size: 14px;
+        font-size: 13px;
+        margin-bottom: 8px;
     }
 
     .banner-text-overlay ul {
-        gap: 5px 15px;
+        gap: 4px 12px;
     }
 
     .banner-text-overlay ul li {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .banner-text-center {
         width: 100%;
+    }
+
+    .banner-slider-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 
     /* Client slider */
@@ -314,41 +338,69 @@
     }
 
     .client-logo-box {
-        height: 140px;
+        height: 120px;
         padding: 15px 20px;
     }
 
     .client-logo-box img {
-        max-height: 100px;
+        max-height: 90px;
     }
 
     .client-slider-wrapper {
         padding: 0 45px;
     }
+
+    .client-slider-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /* Choose section */
+    .choose {
+        padding: 60px 0 130px 0;
+    }
+
+    .choose_box i img {
+        width: 80px;
+    }
+
+    /* Footer */
+    .footer {
+        padding-top: 40px;
+    }
 }
 
 @media (max-width: 575px) {
     .product-slide {
-        flex: 0 0 80%;
-        min-width: 250px;
+        flex: 0 0 85%;
+        min-width: 0;
     }
 
     .product-slider-wrapper {
-        padding: 0 40px;
+        padding: 0 35px;
     }
 
     .product-slider-arrow {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .product {
-        padding: 50px 0 30px 0;
+        padding: 40px 0 20px 0;
+    }
+
+    .product_box figure img {
+        height: 180px;
+    }
+
+    .product_box .product_text {
+        padding: 15px 10px;
     }
 
     .header {
-        padding: 30px 0px 30px 0px;
+        padding: 20px 0px 20px 0px;
     }
 
     .logo {
@@ -358,26 +410,41 @@
         padding-left: 15px;
     }
 
+    .logo img {
+        max-width: 160px;
+    }
+
     .d_none {
         display: none;
     }
 
     .banner_main {
-        min-height: 400px;
+        min-height: 300px;
     }
 
     .text-bg h1 {
-        font-size: 36px;
-        line-height: 46px;
+        font-size: 28px;
+        line-height: 36px;
         padding-bottom: 10px;
     }
 
     .three_box {
         padding: 0 0px;
+        margin-top: -60px;
+    }
+
+    .hottest {
+        padding: 50px 0 30px 0;
     }
 
     .hottest .hottest_box {
-        margin-top: 30px
+        margin-top: 20px;
+        padding: 30px 20px;
+    }
+
+    .hottest .hottest_box p {
+        font-size: 15px;
+        line-height: 26px;
     }
 
     .border_right {
@@ -392,14 +459,31 @@
         max-width: inherit;
     }
 
+    .choose {
+        padding: 50px 0 120px 0;
+    }
+
     .choose .titlepage {
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
 
     .choose_img {
         margin-right: 0;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .choose_img figure {
+        margin-left: 0;
+    }
+
+    .choose_box i img {
+        width: 60px;
+    }
+
+    .choose_text h3 {
+        font-size: 16px;
     }
 
     .padding_left0 {
@@ -443,16 +527,21 @@
         padding: 10px 0px;
     }
 
+    .titlepage {
+        padding-bottom: 30px;
+    }
+
     .titlepage h2 {
-        font-size: 27px;
-        line-height: 44px;
+        font-size: 24px;
+        line-height: 34px;
     }
 
     ul.location_icon li {
         padding-left: 0px;
         display: block;
         text-align: left;
-        margin-top: 20px;
+        margin-top: 15px;
+        font-size: 14px;
     }
 
     .about .about_box {
@@ -468,112 +557,153 @@
     }
 
     .navigation.navbar {
-        float: right;
-        display: inherit !important;
+        float: none;
+        display: flex !important;
+        justify-content: flex-end;
         padding: 0 !important;
-        width: auto;
-        margin-top: -50px;
+        width: 100%;
+        margin-top: 0;
+        position: relative;
     }
 
     .navigation .navbar-collapse {
-        background: #000;
-        padding: 20px;
-        margin-top: 69px;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 20px 25px;
         position: absolute;
-        width: 100%;
-        margin-right: 20px;
-        z-index: 999;
+        top: 100%;
+        left: -15px;
+        right: -15px;
+        width: auto;
+        z-index: 9999;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
 
     .navigation.navbar-dark .navbar-nav .nav-link {
-        padding: 10px 0;
+        padding: 12px 5px;
         color: #fff;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navigation.navbar-dark .navbar-nav .nav-link:last-child {
+        border-bottom: none;
     }
 
     .navigation.navbar-dark .navbar-toggler {
         float: right;
         margin-right: 2px;
-        border: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 6px 10px;
     }
 
     .navigation.navbar-dark .navbar-toggler-icon {
         background: url(../images/menu_icon.png);
         background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        background-size: contain;
     }
 
-    /* Banner text overlays - mobile */
+    /* ===== Banner slider - mobile ===== */
     .banner-slide img {
-        height: 400px;
+        height: 250px;
     }
 
     .banner-text-overlay {
-        position: relative;
+        position: absolute;
         width: 100%;
-        height: auto;
-        padding: 25px 20px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px 20px;
         text-align: center;
         align-items: center;
+        background: rgba(0, 0, 0, 0.7);
     }
 
     .banner-text-overlay h2 {
-        font-size: 22px;
+        font-size: 20px;
         letter-spacing: 2px;
-        margin-bottom: 10px;
-    }
-
-    .banner-text-overlay p {
-        font-size: 13px;
-        line-height: 1.5;
         margin-bottom: 8px;
     }
 
+    .banner-text-overlay p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 6px;
+    }
+
     .banner-text-overlay h4 {
-        font-size: 14px;
-        margin-bottom: 10px;
+        font-size: 12px;
+        margin-bottom: 8px;
     }
 
     .banner-text-overlay ul {
-        gap: 5px 15px;
+        gap: 4px 10px;
         justify-content: center;
     }
 
     .banner-text-overlay ul li {
-        font-size: 13px;
+        font-size: 11px;
+    }
+
+    .banner-text-overlay ul li::before {
+        content: "• ";
     }
 
     .banner-text-left {
-        right: auto;
+        right: 0;
         left: 0;
     }
 
-    .banner-slider-arrow {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
+    .banner-text-center {
+        width: 100%;
     }
 
-    /* Client slider - mobile */
+    .banner-slider-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .banner-slider-next {
+        right: 10px;
+    }
+
+    /* ===== Client slider - mobile ===== */
     .client-slide {
-        flex: 0 0 70%;
-        min-width: 200px;
+        flex: 0 0 calc(50% - 15px);
+        min-width: 0;
     }
 
     .client-logo-box {
-        height: 120px;
-        padding: 15px;
+        height: 100px;
+        padding: 12px;
     }
 
     .client-logo-box img {
-        max-height: 80px;
+        max-height: 65px;
     }
 
     .client-slider-wrapper {
-        padding: 0 40px;
+        padding: 0 35px;
     }
 
     .client-slider-arrow {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    /* ===== Footer - mobile ===== */
+    .footer {
+        padding-top: 30px;
+    }
+
+    .footer .col-md-4,
+    .footer .col-md-3 {
+        margin-bottom: 20px;
     }
 }
