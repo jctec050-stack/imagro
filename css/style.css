@@ -440,19 +440,19 @@ ul.btn li:last-child {
 }
 
 .banner-text-overlay h2 {
-     font-size: 32px;
+     font-size: 40px;
      font-weight: 700;
-     margin-bottom: 15px;
+     margin-bottom: 18px;
      color: #8BC34A;
      letter-spacing: 3px;
      text-transform: uppercase;
 }
 
 .banner-text-overlay p {
-     font-size: 15px;
-     line-height: 1.7;
-     color: #e0e0e0;
-     margin-bottom: 12px;
+     font-size: 17px;
+     line-height: 1.8;
+     color: #fff;
+     margin-bottom: 14px;
 }
 
 .banner-text-overlay p strong {
@@ -475,10 +475,10 @@ ul.btn li:last-child {
 }
 
 .banner-text-overlay h4 {
-     font-size: 18px;
+     font-size: 22px;
      font-weight: 500;
-     color: #ccc;
-     margin-bottom: 15px;
+     color: #ddd;
+     margin-bottom: 18px;
      letter-spacing: 1px;
 }
 
@@ -494,7 +494,7 @@ ul.btn li:last-child {
 
 .banner-text-overlay ul li {
      color: #8BC34A;
-     font-size: 15px;
+     font-size: 16px;
      font-weight: 500;
 }
 
