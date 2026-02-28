@@ -93,46 +93,52 @@
    <div class="product">
       <div class="container">
          <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                <div class="titlepage">
                   <h2>Nuestros Productos</h2>
                </div>
             </div>
          </div>
       </div>
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_left0">
+      <div class="product-slider-wrapper">
+         <button class="product-slider-arrow product-slider-prev" aria-label="Anterior">
+            <i class="fa fa-chevron-left"></i>
+         </button>
+         <div class="product-slider" id="productSlider">
+            <div class="product-slide">
                <div class="product_box">
-                  <figure><img src="images/product1.jpg" alt="#" /></figure>
-                  <h3>Equipamiento</h3>
+                  <figure><img src="images/product1.jpg" alt="Equipamiento Agroindustrial Acopios-Puertos" /></figure>
+                  <h3>Equipamiento Agroindustrial Acopios-Puertos</h3>
                </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+            <div class="product-slide">
                <div class="product_box">
-                  <figure><img src="images/product2.jpg" alt="#" /></figure>
-                  <h3>Silos</h3>
+                  <figure><img src="images/Servicios.jpg" alt="Servicios para las Industrias" /></figure>
+                  <h3>Servicios para las Industrias</h3>
                </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 padding_right0">
+            <div class="product-slide">
                <div class="product_box">
-                  <figure><img src="images/product3.jpg" alt="#" /></figure>
-                  <h3>Servicios</h3>
+                  <figure><img src="images/Repuestos.png" alt="Repuestos y Accesorios" /></figure>
+                  <h3>Repuestos y Accesorios</h3>
                </div>
             </div>
-            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 padding_left0">
+            <div class="product-slide">
                <div class="product_box">
-                  <figure><img src="images/product4.jpg" alt="#" /></figure>
-                  <h3>Industrial</h3>
+                  <figure><img src="images/Ferreteria.png" alt="Ferretería Industrial" /></figure>
+                  <h3>Ferretería Industrial</h3>
                </div>
             </div>
-            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 padding_right0">
+            <div class="product-slide">
                <div class="product_box">
-                  <figure><img src="images/product5.jpg" alt="#" /></figure>
-                  <h3>Repuestos</h3>
+                  <figure><img src="images/Mecanizado.jpg" alt="Mecanizados Industriales" /></figure>
+                  <h3>Mecanizados Industriales</h3>
                </div>
             </div>
          </div>
+         <button class="product-slider-arrow product-slider-next" aria-label="Siguiente">
+            <i class="fa fa-chevron-right"></i>
+         </button>
       </div>
    </div>
    <!-- fin de la sección de productos -->
@@ -237,6 +243,10 @@
    <!-- sidebar -->
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="js/custom.js"></script>
+   <!-- Sliders -->
+   <script src="js/product-slider.js"></script>
+   <script src="js/client-slider.js"></script>
+   <script src="js/banner-slider.js"></script>
 </body>
 
 </html>
